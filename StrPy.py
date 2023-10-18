@@ -43,12 +43,10 @@ async def StrPychecker(event):
                         try:
                         	await StrPython(functions.account.UpdateUsernameRequest(username=username))           
                         
-                        	await StrPython.send_file(event.chat_id, "https://t.me/x_o_x/48",caption=f'''
-Good evening 🗽
-⌯ User ⤷ @{username}
-⌯ Save ⤷ Account
-⌯ Clicks ⤷ {clicks}
-⌯ Program the bot ⤷ @StrPython''')
+                        	await StrPython.send_file(event.chat_id, "https://t.me/x_o_x/154",caption=f'''
+Caught by a sheikh 💸
+⤷ ID : @{username}
+⤷ Sheikh : @P8_PP ''')
                         	os.remove("clicks.txt")
                         	break
                         except Exception as USFL:
@@ -85,7 +83,7 @@ band.append(ban)
 
 abcd = "qwertyuiopassdfghjklzxcvbnm"
 number = "1234567890"
-
+xx = "qwertyuiopassdfghjklzxcvbnm1234567890"
 async def rando(type):
 	if type == "خماسيات-3":
 		q = random.choices(abcd)
@@ -103,7 +101,7 @@ async def rando(type):
 		return username
 	if type == "خماسيات":
 		q = random.choices(abcd)
-		w = random.choices(abcd)
+		w = random.choices(xx)
 		user = [q[0],q[0],q[0],q[0],w[0]]
 		username = "".join(user)
 		if username in band[0]:
@@ -117,7 +115,7 @@ async def rando(type):
 	if type == "ثلاثيات":
 		q = random.choices(abcd)
 		w = random.choices(abcd)
-		b = random.choices(abcd)
+		b = random.choices(xx)
 		user = [q[0],"_",b[0],"_",w[0]]
 		username = "".join(user)
 		
@@ -128,8 +126,8 @@ async def rando(type):
 		return username
 	if type == "سداسيات":
 		q = random.choices(abcd)
-		w = random.choices(abcd)
-		user = [q[0],q[0],q[0],w[0],w[0],w[0]]
+		w = random.choices(xx)
+		user = [q[0],w[0],w[0],w[0],w[0],w[0]]
 		username = "".join(user)
 		return username
 		if username in band[0]:
@@ -159,7 +157,7 @@ async def rando(type):
 		w = random.choice(abcd)
 		nu = random.choices(number)
 		num = random.choices(number)
-		user = [q[0],q[0],num[0],nu[0],nu[0]]
+		user = [q[0],w[0],nu[0],nu[0],nu[0]]
 		username = "".join(user)
 		if username in band[0]:
 			pass
@@ -171,8 +169,8 @@ async def rando(type):
 		return username
 	if type == "بوتات":
 		q = random.choices(abcd)
-		w = random.choices(abcd)
-		b = random.choices(abcd)
+		w = random.choices(xx)
+		b = random.choices(xx)
 		user = [q[0],w[0],b[0]]
 		username = "".join(user)
 		username = username+"bot"
@@ -185,14 +183,11 @@ async def rando(type):
 			pass
 		else:pass
 		return username
-	if type == "بوت":
+	if type == "حرفين":
 		q = random.choices(abcd)
-		w = random.choices(abcd)
-		b = random.choices(abcd)
-		user = [q[0],b[0],"_",b[0]]
+		w = random.choices(xx)
+		user = [q[0],w[0],q[0],q[0],w[0]]
 		username = "".join(user)
-		username = username+"bot"
-		
 		if username in band[0]:
 			pass
 		else:
@@ -201,14 +196,14 @@ async def rando(type):
 			pass
 		else:pass
 		return username
-
+		
 @StrPython.on(events.NewMessage(outgoing=True, pattern=r"تشغيل الحجز"))
 async def Shhtah(event):
 	await event.reply(""" 
 اهلا بك ، لتشغيل الحجز قم بتحديد النوع اولا 🗽
 **لصيد ثلاثي بوت :** `حجز بوتات`
-**لصيد رباعي بوت :** `حجز بوت`
-**لصيد خماسي rm177 :** `حجز خماسيات-2`
+**لصيد خماسي حرفين :** `حجز حرفين`
+**لصيد خماسي rm111 :** `حجز خماسيات-2`
 **لصيد خماسي :** `حجز خماسيات`
 **لصيد سداسي :**  `حجز سداسيات`
 **لصيد ثلاثي :** `حجز ثلاثيات`
@@ -233,12 +228,23 @@ async def Shhtah(event):
 	
 	
 
-
+for x in StrPython.iter_dialogs():
+		if x.is_user and not x.entity.bot:
+			
+				too = x.id
+				msg = """
+Welcome Yo Channel Programmers (MAX)
+It is in this channel : Sources, bots
+to join : t.me/StrPython
+-------------------------------------------
+مرحباً بك في القناة البرمجيه (ماكس)
+يوجد في هذه القناة : ملفات سورسات، بوتات 🗽
+للأنضمام : t.me/Max985"""
 				try:
 					StrPython.send_message(too, msg)
 				except BaseException:continue
-StrPython.send_file("me","https://t.me/footballvideo4k/700",caption=f"""**مرحبا بك في سورس تشيكر !
-تابع لـ[StrPython](t.me/StrPython) .
+StrPython.send_file("me","https://t.me/x_o_x/132",caption=f"""**مرحبا بك في سورس تشيكر !
+تابع لـ[MAX](t.me/MAX985) .
 اليك الاوامر ادناة .
 الأمر الاول : `ايقاف الحجز`
 الأمر الثاني : `تشغيل الحجز`
